@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.conteiner{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner button{
+    position: absolute;
+    width: 150px;
+    height: 75px;
+    background-color: #1b0957;
+    border: none;
+    transition: 0.5s;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.conteiner:hover button{
+    transform: scale(1.5);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #1b0957,0px 0px 40px #1b0957,0px 0px 60px #1b0957 ;
+}
+.conteiner button span:nth-child(1){
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    height: 2px;
+    transition: 1s;
+}
+.conteiner:hover button span:nth-child(1){
+    left: 100%;
+}
+.conteiner button span:nth-child(2){
+    position: absolute;
+    width: 2px;
+    left: 98%;
+    top: -100%;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    height: 100%;
+    transition: 1s;
+}
+.conteiner:hover button span:nth-child(2){
+    top: 100%;
+}
+.conteiner button span:nth-child(3){
+    position: absolute;
+    width: 100%;
+    right: -100%;
+    top: 95%;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    height: 2px;
+    transition: 1s;
+}
+.conteiner:hover button span:nth-child(3){
+    right: 100%;
+}
+.conteiner button span:nth-child(4){
+    position: absolute;
+    width: 2px;
+    left: 0;
+    bottom: -100%;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    height: 100%;
+    transition: 1s;
+}
+.conteiner:hover button span:nth-child(4){
+    bottom:100%;
+}
+.conteiner:hover button span{
+    box-shadow: 0px 0px 20px #00c9ff,0px 0px 40px #00c9ff,0px 0px 60px #00c9ff ;
+}
